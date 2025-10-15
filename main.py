@@ -23,4 +23,4 @@ def main():
         print("Please provide the file size in bytes as a command-line argument.")
 
 if __name__ == "__main__":
-    main()
+    main() # Dummy
