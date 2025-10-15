@@ -40,3 +40,26 @@ To install dependencies:
 ```bash
 uv pip install -r requirements.txt
 ```
+## Folder Structure
+```
+
+../pythondev/
+├── data
+│   └── create_dummy_files.py
+├── main.py
+├── Makefile
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+├── src
+│   ├── date_parser.py
+│   ├── formatter.py
+│   └── __init__.py
+├── tests
+│   ├── __init__.py
+│   ├── test_date_parser.py
+│   └── test_format_file_size.py
+└── uv.lock
+
+
+```
