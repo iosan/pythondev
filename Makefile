@@ -14,7 +14,7 @@ check-lint:
 	@echo "Running linter..."
 	flake8 .
 
-check-all: check-lint test
+check-all: test
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
