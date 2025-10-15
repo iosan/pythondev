@@ -16,5 +16,9 @@ jobs:
           python-version: '3.12'
       - name: Install Dependencies
         run: pip install -r requirements.txt
-      - name: Run Makefile Checks
-        run: make all
+      - name: Run Code Checks
+        run: make check-all
+      - name: Run Code
+        run: make run
+      - name: Clean Up Code
+        run: make clean
