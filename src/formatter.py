@@ -1,5 +1,6 @@
 import math
 
+
 def format_file_size(size_bytes):
     """
     Convert a file size in bytes to a human-readable string.

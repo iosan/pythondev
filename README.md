@@ -25,7 +25,7 @@ python main.py 1048576
 
 ## Testing with pytest
 
-This project uses [pytest](https://pytest.org/) for unit testing.  
+This project uses [pytest](https://pytest.org/) for unit testing.
 To run the tests, execute:
 
 ```bash
@@ -34,10 +34,9 @@ pytest
 
 ## Installing dependencies with uv
 
-You can use [uv](https://github.com/astral-sh/uv) for fast Python package management.  
+You can use [uv](https://github.com/astral-sh/uv) for fast Python package management.
 To install dependencies:
 
 ```bash
 uv pip install -r requirements.txt
 ```
-
