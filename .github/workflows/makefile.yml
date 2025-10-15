@@ -1,24 +1,20 @@
-name: Makefile CI
+name: CI Checks
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
   pull_request:
-    branches: [ "master" ]
 
 jobs:
-  build:
-
+  checks:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-
-    - name: test code
-        run: make test
-    - name: run code
-        run: make run
-    - name: test all code
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+      - name: Run Makefile Checks
         run: make all
-    - name: clean code
-        run: make clean    
