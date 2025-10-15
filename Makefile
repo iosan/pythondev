@@ -10,6 +10,12 @@ run: create-dummy
 test: create-dummy
 	pytest tests/test_date_parser.py --maxfail=1 --disable-warnings
 
+check-lint:
+	@echo "Running linter..."
+	flake8 .
+
+check-all: check-lint test
+
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 	rm -rf .pytest_cache
@@ -22,4 +28,4 @@ run-test-clean:
 	$(MAKE) test
 	$(MAKE) clean
 
-all: run test clean
+all: run check-all clean
