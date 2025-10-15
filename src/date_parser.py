@@ -1,14 +1,13 @@
-import os
-import re
 from datetime import UTC, datetime
 from typing import Dict, List, Optional, Union
-
+import re
+import os
 import dateutil.parser
 
 
 def parse_timestamp(timestamp: Union[str, int, float]) -> Optional[datetime]:
     """
-    Parse a timestamp in various formats (ISO, RFC, Unix epoch, etc.) and return a naive UTC datetime object.
+    Parse a timestamp in various formats and return a naive UTC datetime object.
 
     Args:
         timestamp (str | int | float): The timestamp to parse.
