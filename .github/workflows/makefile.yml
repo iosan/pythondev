@@ -1,0 +1,24 @@
+name: CI Checks
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+      - name: Run Code Checks
+        run: make check-all
+      - name: Run Code
+        run: make run
+      - name: Clean Up Code
+        run: make clean
