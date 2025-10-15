@@ -19,6 +19,8 @@ pycodestyle==2.14.0
 pyflakes==3.4.0
 pygments==2.19.2
 pytest==8.4.2
+python-dateutil==2.9.0.post0
 pytokens==0.1.10
 pyyaml==6.0.3
+six==1.17.0
 virtualenv==20.35.3

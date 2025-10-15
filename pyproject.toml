@@ -10,6 +10,7 @@ dependencies = [
     "pip>=25.2",
     "pre-commit>=4.3.0",
     "pytest>=8.4.2",
+    "python-dateutil>=2.9.0.post0",
 ]
 
 [tool.flake8]
